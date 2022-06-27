@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyInterfaces", "MyInterface
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterfaceNameClash", "InterfaceNameClash\InterfaceNameClash.csproj", "{8A4904E1-AC50-4B11-9B6C-7E8772F5B8CF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterfaceHierarchy", "InterfaceHierarchy\InterfaceHierarchy.csproj", "{57264F55-C325-443A-81DA-17B06D579094}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{8A4904E1-AC50-4B11-9B6C-7E8772F5B8CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8A4904E1-AC50-4B11-9B6C-7E8772F5B8CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8A4904E1-AC50-4B11-9B6C-7E8772F5B8CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57264F55-C325-443A-81DA-17B06D579094}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57264F55-C325-443A-81DA-17B06D579094}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57264F55-C325-443A-81DA-17B06D579094}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57264F55-C325-443A-81DA-17B06D579094}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
