@@ -18,6 +18,11 @@ namespace CustomEnumeratorWithYield.Classes
             carArray[3] = new Car("Fred", 30);
         }
 
-        IEnumerator IEnumerable.GetEnumerator() => carArray.GetEnumerator();
+        //IEnumerator IEnumerable.GetEnumerator() => carArray.GetEnumerator();
+        public IEnumerator GetEnumerator()
+        {
+            foreach (Car c in carArray)
+                yield return c;
+        }
     }
 }
