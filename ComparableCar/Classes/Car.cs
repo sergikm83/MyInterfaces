@@ -32,14 +32,7 @@ namespace ComparableCar.Classes
         {
             Car temp = obj as Car;
             if (temp != null)
-            {
-                if (this.CarID > temp.CarID)
-                    return 1;
-                if (this.CarID < temp.CarID)
-                    return -1;
-                else
-                    return 0;
-            }
+                return this.CarID.CompareTo(temp.CarID);
             else
                 throw new ArgumentException("Parameter is not a Car");
         }
