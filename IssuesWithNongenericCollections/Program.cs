@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using System.Collections.Generic;
 
 namespace IssuesWithNongenericCollections
 {
@@ -61,6 +62,22 @@ namespace IssuesWithNongenericCollections
             // myPeople.AddPerson(new Car());
             foreach(Person p in myPeole)
                 Console.WriteLine(p);
+        }
+        static void UseGenericList()
+        {
+            Console.WriteLine("***** Fun with Generics *****\n");
+            // Этот объект List<> может хранить только объекты Person.
+            List<Person> morePeople = new List<Person>();
+            morePeople.Add(new Person(firstName: "Fank", lastName: "Black", age: 50));
+            Console.WriteLine(morePeople[0]);
+            // Этот List<> может хранить только целые числа.
+            List<int> moreInts = new List<int>();
+            moreInts.Add(10);
+            moreInts.Add(2);
+            int sum = moreInts[0] + moreInts[1];
+            // Ошибка на этапе компиляции! Объект Person
+            // не может быть добавлен в списко элементов int
+            // moreInts.Add(new Person());
         }
     }
     public class Person
