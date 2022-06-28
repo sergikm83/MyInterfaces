@@ -26,10 +26,18 @@ namespace IssuesWithNongenericCollections
         }
         static void WorkWithArrayList()
         {
+            // Типы значений автоматически упаковываются
+            // когда передаются члену, принимающему object
             ArrayList myInts = new ArrayList();
             myInts.Add(10);
             myInts.Add(20);
             myInts.Add(35);
+            // Распаковка происходит, когда объект преобразуется
+            // обратно в данные, расположенные в стеке
+            int i = (int)myInts[0];
+            // Теперь значение вновь упаковывается, т.к.
+            // метод WriteLine() требует типа object!
+            Console.WriteLine("Value of your int: {0}", i);
         }
     }
 }
