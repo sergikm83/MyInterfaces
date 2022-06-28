@@ -26,6 +26,12 @@ namespace ComparableCar
             Console.WriteLine("Here is the ordered set of cars:");
             foreach (Car c in myAutos)
                 Console.WriteLine($"{c.CarID} {c.PetName}");
+
+            Array.Sort(myAutos, new PetNameComparer());
+            // Вывести отсортированный массив
+            Console.WriteLine("Ordering by pet name:");
+            foreach (Car c in myAutos)
+                Console.WriteLine($"{c.CarID} {c.PetName}");
         }
     }
 }
