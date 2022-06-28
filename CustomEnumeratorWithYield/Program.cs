@@ -18,7 +18,7 @@ namespace CustomEnumeratorWithYield
             Console.WriteLine();
 
             // Получить элементы (в обратном порядке
-            // с применением bvtyjdfyyjuj bnthfnjhf
+            // с применением именованного итератора
             foreach(Car c in carLot.GetTheCars(returnReversed: true))
                 Console.WriteLine($"{c.PetName} is going {c.CurrentSpeed} MPH");
         }
