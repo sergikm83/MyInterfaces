@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CustomEnumerator.Classes
 {
-    public class Garage
+    public class Garage : IEnumerable
     {
         private Car[] carArray = new Car[4];
         public Garage()
@@ -16,5 +17,7 @@ namespace CustomEnumerator.Classes
             carArray[2] = new Car("Zippy", 30);
             carArray[3] = new Car("Fred", 30);
         }
+
+        public IEnumerator GetEnumerator() => carArray.GetEnumerator();
     }
 }
