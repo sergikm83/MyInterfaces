@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MIInterfaceHierarchy.Interfaces
 {
-    public interface IDraw
+    public interface IDrawable
     {
         void Draw();
     }
