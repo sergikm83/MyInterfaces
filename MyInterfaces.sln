@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InterfaceHierarchy", "Inter
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MIInterfaceHierarchy", "MIInterfaceHierarchy\MIInterfaceHierarchy.csproj", "{34B67E18-3448-4599-9F02-66D16900FFF5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomEnumerator", "CustomEnumerator\CustomEnumerator.csproj", "{EAF95A67-0E80-4B66-A371-C57172B72544}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{34B67E18-3448-4599-9F02-66D16900FFF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{34B67E18-3448-4599-9F02-66D16900FFF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{34B67E18-3448-4599-9F02-66D16900FFF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAF95A67-0E80-4B66-A371-C57172B72544}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAF95A67-0E80-4B66-A371-C57172B72544}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAF95A67-0E80-4B66-A371-C57172B72544}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAF95A67-0E80-4B66-A371-C57172B72544}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
