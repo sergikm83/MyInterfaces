@@ -9,15 +9,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InterfaceNameClash", "Inter
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InterfaceHierarchy", "InterfaceHierarchy\InterfaceHierarchy.csproj", "{57264F55-C325-443A-81DA-17B06D579094}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MIInterfaceHierarchy", "MIInterfaceHierarchy\MIInterfaceHierarchy.csproj", "{34B67E18-3448-4599-9F02-66D16900FFF5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MIInterfaceHierarchy", "MIInterfaceHierarchy\MIInterfaceHierarchy.csproj", "{34B67E18-3448-4599-9F02-66D16900FFF5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomEnumerator", "CustomEnumerator\CustomEnumerator.csproj", "{EAF95A67-0E80-4B66-A371-C57172B72544}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomEnumerator", "CustomEnumerator\CustomEnumerator.csproj", "{EAF95A67-0E80-4B66-A371-C57172B72544}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomEnumeratorWithYield", "CustomEnumeratorWithYield\CustomEnumeratorWithYield.csproj", "{E58E994D-A468-401D-8859-0B5746B2711D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomEnumeratorWithYield", "CustomEnumeratorWithYield\CustomEnumeratorWithYield.csproj", "{E58E994D-A468-401D-8859-0B5746B2711D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloneablePoint", "CloneablePoint\CloneablePoint.csproj", "{F4FE10E8-7FFA-4F74-A948-CC6E4728DF99}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CloneablePoint", "CloneablePoint\CloneablePoint.csproj", "{F4FE10E8-7FFA-4F74-A948-CC6E4728DF99}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComparableCar", "ComparableCar\ComparableCar.csproj", "{2252F834-CE3C-40BF-84E6-6C1B86BD5BE8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComparableCar", "ComparableCar\ComparableCar.csproj", "{2252F834-CE3C-40BF-84E6-6C1B86BD5BE8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IssuesWithNongenericCollections", "IssuesWithNongenericCollections\IssuesWithNongenericCollections.csproj", "{D5993FF6-A35F-40EA-B0C8-C411006372F2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{2252F834-CE3C-40BF-84E6-6C1B86BD5BE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2252F834-CE3C-40BF-84E6-6C1B86BD5BE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2252F834-CE3C-40BF-84E6-6C1B86BD5BE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5993FF6-A35F-40EA-B0C8-C411006372F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5993FF6-A35F-40EA-B0C8-C411006372F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5993FF6-A35F-40EA-B0C8-C411006372F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5993FF6-A35F-40EA-B0C8-C411006372F2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
