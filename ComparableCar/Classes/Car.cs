@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ComparableCar.Classes
 {
-    public class Car
+    public class Car : IComparable
     {
         public const int MaxSpeed = 100;
         public int CarID { get; set; }
@@ -28,6 +28,21 @@ namespace ComparableCar.Classes
         }
         public void CrunkTunes(bool state) => theMusicBox.TurnOn(state);
 
+        int IComparable.CompareTo(object obj)
+        {
+            Car temp = obj as Car;
+            if (temp != null)
+            {
+                if (this.CarID > temp.CarID)
+                    return 1;
+                if (this.CarID < temp.CarID)
+                    return -1;
+                else
+                    return 0;
+            }
+            else
+                throw new ArgumentException("Parameter is not a Car");
+        }
         public void Accelerate(int delta)
         {
             if (delta < 0)
