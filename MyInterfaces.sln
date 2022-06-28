@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomEnumeratorWithYield",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloneablePoint", "CloneablePoint\CloneablePoint.csproj", "{F4FE10E8-7FFA-4F74-A948-CC6E4728DF99}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComparableCar", "ComparableCar\ComparableCar.csproj", "{2252F834-CE3C-40BF-84E6-6C1B86BD5BE8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{F4FE10E8-7FFA-4F74-A948-CC6E4728DF99}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F4FE10E8-7FFA-4F74-A948-CC6E4728DF99}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F4FE10E8-7FFA-4F74-A948-CC6E4728DF99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2252F834-CE3C-40BF-84E6-6C1B86BD5BE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2252F834-CE3C-40BF-84E6-6C1B86BD5BE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2252F834-CE3C-40BF-84E6-6C1B86BD5BE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2252F834-CE3C-40BF-84E6-6C1B86BD5BE8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
