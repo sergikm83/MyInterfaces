@@ -14,6 +14,7 @@ namespace IssuesWithNongenericCollections
         {
             int myInt = 25;
             object boxedInt = myInt;
+            int unboxedInt = (int)boxedInt;
         }
     }
 }
