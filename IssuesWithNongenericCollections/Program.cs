@@ -7,7 +7,7 @@ namespace IssuesWithNongenericCollections
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            SimpleBoxUnboxOperation();
         }
 
         static void SimpleBoxUnboxOperation()
@@ -15,6 +15,14 @@ namespace IssuesWithNongenericCollections
             int myInt = 25;
             object boxedInt = myInt;
             int unboxedInt = (int)boxedInt;
+            try
+            {
+                long unboxedLong = (long)boxedInt;
+            }
+            catch (InvalidCastException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
     }
 }
