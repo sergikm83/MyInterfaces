@@ -24,5 +24,12 @@ namespace IssuesWithNongenericCollections
                 Console.WriteLine(ex.Message);
             }
         }
+        static void WorkWithArrayList()
+        {
+            ArrayList myInts = new ArrayList();
+            myInts.Add(10);
+            myInts.Add(20);
+            myInts.Add(35);
+        }
     }
 }
