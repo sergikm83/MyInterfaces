@@ -39,5 +39,14 @@ namespace IssuesWithNongenericCollections
             // метод WriteLine() требует типа object!
             Console.WriteLine("Value of your int: {0}", i);
         }
+        static void ArrayListOfRandomObjects()
+        {
+            // ArrayList может хранить вообще все что угодно.
+            ArrayList allMyObjects = new ArrayList();
+            allMyObjects.Add(true);
+            allMyObjects.Add(new OperatingSystem(PlatformID.Other, new Version(10, 0)));
+            allMyObjects.Add(66);
+            allMyObjects.Add(3.14);
+        }
     }
 }
