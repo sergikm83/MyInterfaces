@@ -48,6 +48,20 @@ namespace IssuesWithNongenericCollections
             allMyObjects.Add(66);
             allMyObjects.Add(3.14);
         }
+        static void UsePersonCollection()
+        {
+            Console.WriteLine("***** Custom Person Collection *****\n");
+            PersonCollection myPeole = new PersonCollection();
+            myPeole.AddPerson(new Person(firstName: "Homer", lastName: "Simpson", age: 40));
+            myPeole.AddPerson(new Person(firstName: "Marge", lastName: "Simpson", age: 38));
+            myPeole.AddPerson(new Person(firstName: "Lisa", lastName: "Simpson", age: 9));
+            myPeole.AddPerson(new Person(firstName: "Bart", lastName: "Simpson", age: 7));
+            myPeole.AddPerson(new Person(firstName: "Maggie", lastName: "Simpson", age: 2));
+            // Это вызовет ошибку на этапе компиляции!
+            // myPeople.AddPerson(new Car());
+            foreach(Person p in myPeole)
+                Console.WriteLine(p);
+        }
     }
     public class Person
     {
