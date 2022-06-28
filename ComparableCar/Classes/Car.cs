@@ -9,6 +9,7 @@ namespace ComparableCar.Classes
     public class Car
     {
         public const int MaxSpeed = 100;
+        public int CarID { get; set; }
         public int CurrentSpeed { get; set; }
         public string PetName { get; set; }
         private bool carIsDead;
@@ -19,7 +20,12 @@ namespace ComparableCar.Classes
             CurrentSpeed = speed;
             PetName = name;
         }
-
+        public Car(string name, int speed, int id)
+        {
+            CurrentSpeed = speed;
+            PetName = name;
+            CarID = id;
+        }
         public void CrunkTunes(bool state) => theMusicBox.TurnOn(state);
 
         public void Accelerate(int delta)
