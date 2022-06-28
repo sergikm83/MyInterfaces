@@ -13,10 +13,10 @@ namespace CustomEnumerator
 
             foreach(Car c in carLot)
                 Console.WriteLine($"{c.PetName} is going {c.CurrentSpeed} MPH");
-            IEnumerator i = carLot.GetEnumerator();
-            i.MoveNext();
-            Car myCar = (Car)i.Current;
-            Console.WriteLine("{0} is going {1} MPH",myCar.PetName,myCar.CurrentSpeed);
+            //IEnumerator i = carLot.GetEnumerator();
+            //i.MoveNext();
+            //Car myCar = (Car)i.Current;
+            //Console.WriteLine("{0} i going {1} MPH", myCar.PetName, myCar.CurrentSpeed);
         }
     }
 }

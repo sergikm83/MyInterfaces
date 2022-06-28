@@ -18,6 +18,6 @@ namespace CustomEnumerator.Classes
             carArray[3] = new Car("Fred", 30);
         }
 
-        public IEnumerator GetEnumerator() => carArray.GetEnumerator();
+        IEnumerator IEnumerable.GetEnumerator() => carArray.GetEnumerator();
     }
 }
