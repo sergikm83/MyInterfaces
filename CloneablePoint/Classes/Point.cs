@@ -17,6 +17,6 @@ namespace CloneablePoint.Classes
 
         public override string ToString() => $"X = {X}; Y = {Y}";
 
-        public object Clone() => new Point(this.X, this.Y);
+        public object Clone() => this.MemberwiseClone();
     }
 }
