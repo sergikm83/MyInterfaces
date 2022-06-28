@@ -24,5 +24,24 @@ namespace CustomEnumeratorWithYield.Classes
             foreach (Car c in carArray)
                 yield return c;
         }
+
+        public IEnumerable GetTheCars(bool returnReversed)
+        {
+            return actualImplementation();
+
+            IEnumerable actualImplementation()
+            {
+                if (returnReversed)
+                {
+                    for (int i = carArray.Length; i != 0; i--)
+                        yield return carArray[i - 1];
+                }
+                else
+                {
+                    foreach (Car c in carArray)
+                        yield return c;
+                }
+            }
+        }
     }
 }
