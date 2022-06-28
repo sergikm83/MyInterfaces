@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CustomEnumerator.Classes
+namespace CustomEnumeratorWithYield.Classes
 {
     public class Garage : IEnumerable
     {
