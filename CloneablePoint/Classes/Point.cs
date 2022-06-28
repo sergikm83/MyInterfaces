@@ -24,6 +24,15 @@ namespace CloneablePoint.Classes
 
         public override string ToString() => $"X = {X}; Y = {Y}; Name = {desc.PetName};\nID = {desc.PointID}\n";
 
-        public object Clone() => this.MemberwiseClone();
+        public object Clone()
+        {
+            // Сначала получить поверхностную копию
+            Point newPoint = (Point)this.MemberwiseClone();
+            // Затем восполнить пробелы
+            PointDescription currentDesc = new PointDescription();
+            currentDesc.PetName = this.desc.PetName;
+            newPoint.desc = currentDesc;
+            return newPoint;
+        }
     }
 }
