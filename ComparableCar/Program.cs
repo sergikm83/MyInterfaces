@@ -38,6 +38,14 @@ namespace ComparableCar
             Console.WriteLine("Ordering by current speed:");
             foreach (Car c in myAutos)
                 Console.WriteLine($"{c.CurrentSpeed} {c.CarID} {c.PetName}");
+            Console.WriteLine();
+            Array.Sort(myAutos, Car.SortByPetName);
+            foreach (Car c in myAutos)
+                Console.WriteLine($"{c.CurrentSpeed} {c.CarID} {c.PetName}");
+            Console.WriteLine();
+            Array.Sort(myAutos, Car.SortbyCurrentSpeed);
+            foreach (Car c in myAutos)
+                Console.WriteLine($"{c.CurrentSpeed} {c.CarID} {c.PetName}");
         }
     }
 }
